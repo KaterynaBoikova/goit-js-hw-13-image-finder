@@ -1,7 +1,10 @@
 import './css/styles.css';
+import '../node_modules/basiclightbox/dist/basicLightbox.min.css';
 import apiService from './js/apiService';
 import updateImageMarkup from './js/update_image_markup';
 import refs from './js/refs';
+import onImageClick from './js/lightbox';
+
 
 
 
@@ -30,3 +33,8 @@ refs.buttonRef.addEventListener('click', ()=>{
       });
     });
   });
+
+
+refs.ulRef.addEventListener('click', onImageClick);
+
+
